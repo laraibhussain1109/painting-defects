@@ -1,0 +1,6 @@
+active_product: default
+database: inspection_results/inspections.db
+save_results: true
+log_level: INFO
+cpu_only: false
+
