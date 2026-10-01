@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+logs/*.log
+inspection_results/**
+!inspection_results/.gitkeep
+models/**/*.pt
+models/**/*.onnx
+models/**/*.ckpt
+dataset/**
+!dataset/.gitkeep
+*.db
+

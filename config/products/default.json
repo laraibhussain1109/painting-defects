@@ -1,0 +1,17 @@
+{
+  "name": "default",
+  "yolo": {"model_path": "models/yolo/best.pt", "confidence": 0.5, "iou": 0.45, "expected_class": null, "padding": 8, "image_size": 1280},
+  "roi": {"inspection_polygon": [], "excluded_polygons": []},
+  "alignment": {"enabled": false, "minimum_confidence": 0.35},
+  "preprocessing": {"white_balance": true, "lab_luminance": true, "clahe": false, "gamma": 1.0},
+  "anomaly": {"enabled": true, "backend": "dinomaly", "model_path": "", "threshold": 0.62, "version": "untrained"},
+  "tiling": {"tile_size": 512, "overlap": 0.2, "batch_size": 4},
+  "colour": {"enabled": true, "threshold_delta_e": 8.0},
+  "texture": {"enabled": true, "threshold": 0.55},
+  "glare": {"strategy": "REDUCE_ANOMALY_WEIGHT", "weight": 0.25, "value_threshold": 235, "saturation_threshold": 45},
+  "postprocessing": {"pixel_threshold": 0.62, "minimum_area_px": 12, "critical_area_px": 500, "morphology_kernel": 3},
+  "fusion": {"pass_threshold": 0.30, "fail_threshold": 0.67, "anomaly_weight": 0.5, "colour_weight": 0.25, "texture_weight": 0.25},
+  "calibration": {"pixels_per_mm": null},
+  "references": [],
+  "dataset_path": "dataset/default"
+}
